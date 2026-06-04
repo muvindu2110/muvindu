@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<defs>
+  <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#2ff3e8"/>
+    <stop offset="100%" stop-color="#1a5fff"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<g fill="none" stroke="url(#grad)" stroke-width="18" stroke-linejoin="round" filter="url(#glow)">
+  <!-- left shape -->
+  <path d="M160 540 L390 310 L390 390 L280 500 L520 740 L520 860 Z"/>
+  
+  <!-- arrow -->
+  <path d="M520 190 L520 470"/>
+  <path d="M450 260 L520 190 L590 260"/>
+
+  <!-- center circuit -->
+  <path d="M520 860 L520 520 L710 330"/>
+  <path d="M560 820 L560 560 L730 390"/>
+
+  <!-- check -->
+  <path d="M700 650 L820 770 L950 650"/>
+
+  <!-- hammer -->
+  <path d="M720 250
+           C780 180,900 180,960 280
+           L900 340
+           C860 300,810 310,780 360
+           L700 280
+           C740 250,740 220,720 250 Z"/>
+</g>
+</svg>
